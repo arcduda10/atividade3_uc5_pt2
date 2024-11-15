@@ -1,0 +1,177 @@
+/* CSS para estilizar a página */
+body {
+    background-color: black; /* Fundo preto */
+    color: white; /* Texto branco */
+    font-family: 'Krona One', sans-serif; /* Fonte do Google */
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+/* Estilo do banner */
+.banner {
+    background-color: red; /* Banner vermelho */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo do título do banner */
+.banner h1 {
+    margin: 0;
+    color: white;
+    font-family: 'Krona One';
+}
+
+/* Estilo da barra de pesquisa */
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+/* Estilo do input da barra de pesquisa */
+.search-bar input {
+    width: 100%;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Estilo dos ícones no banner */
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilo dos ícones */
+.icon-um {
+    width: 30px;           
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Estilo dos ícones */
+.icon-dois {
+    width: 30px;           
+    height: 40px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none; /* Esconde o pop-up inicialmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.popup-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+.popup-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+/* Estilo do menu */
+.menu {
+    background-color: #ffffff; /* Cor de fundo do menu */
+    padding: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+/* Galeria de imagens */
+.gallery {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.gallery-item1 {
+	text-align: center;
+	margin: 10px;
+	color: white;
+}
+
+.gallery-item2 {
+	text-align: center;
+	margin: 10px;
+	color: white;
+}
+
+.gallery-item3 {
+	text-align: center;
+	margin: 10px;
+	color: white;
+}
+
+.gallery-item4 {
+	text-align: center;
+	margin: 10px;
+	color: white;
+}
+
+.gallery-item5 {
+	text-align: center;
+	margin: 10px;
+	color: white;
+}
+
+
+/* Estilo do rodapé */
+footer {
+    background-color: #222; /* Cor de fundo do rodapé */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h2 {
+    margin: 10px 0;
+}
+
+/* Links no rodapé */
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
